@@ -1657,6 +1657,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1183443920}
+  - component: {fileID: 1183443921}
   m_Layer: 0
   m_Name: MerchantWindow
   m_TagString: Untagged
@@ -1687,6 +1688,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1500, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1183443921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183443919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8107900d993669342a8b423655d82844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dummyMerchantWindowData: {fileID: 11400000, guid: 69e0fe33cbdc77341943638818be0a12, type: 2}
+  _goldValueReference: {fileID: 11400000, guid: 8c1f55c2ffdaf4741abfd3800c191699, type: 2}
 --- !u!224 &1233215178 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7211089109304456420, guid: 20c8edd33ac025946a597294af3d2046, type: 3}
@@ -2432,8 +2447,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2038366638}
+  - component: {fileID: 2038366639}
   m_Layer: 0
-  m_Name: PlayersGold
+  m_Name: PlayerGoldAmountElement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2461,6 +2477,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 290.3, y: 261.4}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2038366639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038366637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed3b7e8e65242e0946ce2f193502c5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _goldValueText: {fileID: 1694049944}
+  _goldVariable: {fileID: 11400000, guid: 8c1f55c2ffdaf4741abfd3800c191699, type: 2}
 --- !u!1001 &7211089108339714606
 PrefabInstance:
   m_ObjectHideFlags: 0
