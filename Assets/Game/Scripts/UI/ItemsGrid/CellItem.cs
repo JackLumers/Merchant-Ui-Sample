@@ -72,9 +72,16 @@ namespace Game.Scripts.UI.ItemsGrid
                 if (!raycastResult.gameObject.TryGetComponent<ItemsGridCell>(out var cellToMoveItem)) 
                     continue;
 
-                if (cellToMoveItem.GridController.TryPlaceItem != null && cellToMoveItem.GridController.TryPlaceItem.Invoke(
-                        new ItemsGridController.TryPlaceItemParam(this, cellToMoveItem)))
+                var tryPlaceParam = new ItemsGridController.TryPlaceItemParam(this, cellToMoveItem);
+                
+                if (cellToMoveItem.GridController.TryPlaceItem != null &&
+                    cellToMoveItem.GridController.TryPlaceItem.Invoke(tryPlaceParam))
+                {
+                    OwnerGridCell.ClearData();
+                    cellToMoveItem.PlaceCellItem(this);
+                    
                     return;
+                }
             }
             
             MoveToOwnerCell();

@@ -50,12 +50,9 @@ namespace Game.Scripts.UI
                 return false;
             }
 
-            // Same fraction. Just move to cell
+            // Same cells fraction.
             if (item.OwnerGridCell.Fraction == cellToMoveItem.Fraction)
             {
-                item.OwnerGridCell.ClearData();
-                cellToMoveItem.PlaceCellItem(item);
-
                 return true;
             }
 
@@ -66,10 +63,7 @@ namespace Game.Scripts.UI
             {
                 _goldValueReference.Value += item.GameItemData.ItemData.GoldValue
                                              * _dummyMerchantWindowData.SellCoefficient;
-
-                item.OwnerGridCell.ClearData();
-                cellToMoveItem.PlaceCellItem(item);
-
+                
                 return true;
             }
 
@@ -85,9 +79,6 @@ namespace Game.Scripts.UI
                 if (_goldValueReference.Value - expenses >= 0)
                 {
                     _goldValueReference.Value -= expenses;
-
-                    item.OwnerGridCell.ClearData();
-                    cellToMoveItem.PlaceCellItem(item);
 
                     return true;
                 }
