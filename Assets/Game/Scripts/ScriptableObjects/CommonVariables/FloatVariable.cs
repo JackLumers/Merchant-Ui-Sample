@@ -7,6 +7,8 @@ namespace Game.Scripts.ScriptableObjects.CommonVariables
     /// <remarks>
     /// Found this approach from Unity Austin 2017
     /// https://youtu.be/raQ3iHhE_Kk?t=1109
+    ///
+    /// Event/Action can be in Event Architecture from the same approach, but for the sake of simplicity will do.
     /// </remarks>
     [CreateAssetMenu(
         fileName = "New " + nameof(FloatVariable),

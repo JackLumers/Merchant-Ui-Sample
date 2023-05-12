@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: DummyMerchantWindowData
   m_EditorClassIdentifier: 
   _goldAmount: 1000
-  _sellCoefficient: 0.5
+  _sellCoefficient: 1
   _buyCoefficient: 1.5
+  _playerFraction: {fileID: 11400000, guid: 1d14a768266dd9b46b59fd801605d0ec, type: 2}
   _playerItems:
-  - Sprite: {fileID: 21300000, guid: 697c225e02124f14bad461c1433530b8, type: 3}
-    GoldValue: 0
-  - Sprite: {fileID: 21300000, guid: ae6f372d5ebc5e148ba951cc8d2aed3a, type: 3}
-    GoldValue: 0
-  _merchantItems: []
+  - {fileID: 11400000, guid: 9c39c4fbea55b2b4e9e2e8d5b448b799, type: 2}
+  - {fileID: 11400000, guid: d0e968ff71b9f604a8133ce771273abf, type: 2}
+  _merchantItems:
+  - {fileID: 11400000, guid: 10a9d02c8dfa3dd47b75e5ad1d086f68, type: 2}
+  - {fileID: 11400000, guid: cd56d970d441866458e715e86acc9f93, type: 2}
