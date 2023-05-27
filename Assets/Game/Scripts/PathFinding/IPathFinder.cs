@@ -15,12 +15,10 @@ namespace Game.Scripts.PathFinding
         public Rectangle First;
         public Rectangle Second;
         
-        // It's Vector3 in test task so I left it Vector3.
-        // But since z coordinate not used it's just ignored without exception.
-        public Vector3 Start;
-        public Vector3 End;
+        public Vector2 Start;
+        public Vector2 End;
     }
-        
+
     [Serializable]
     public struct Rectangle
     {

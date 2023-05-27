@@ -4,18 +4,8 @@ using UnityEngine;
 
 namespace Game.Scripts.PathFinding
 {
-    public class AStarPathFinder : IPathFinder
+    public class LesserTurnsPathFinder : IPathFinder
     {
-        /// <summary>
-        /// Lesser is more precise, bigger is more performant.
-        /// </summary>
-        private const float StepAngle = 20;
-        
-        /// <summary>
-        /// Lesser is more precise, bigger is more performant.
-        /// </summary>
-        private const float StepDistance = 0.1f;
-        
         public IEnumerable<Vector2> FindPath(Vector2 a, Vector2 c, IEnumerable<Edge> edges)
         { 
             return AStarSearch.SearchPath(new EdgesAndRectanglesCentersGraph(edges, a, c), a, c).Keys;
